@@ -8,3 +8,4 @@ pip install torchaudio==2.5.1
 pip install pretty_midi==0.2.10
 pip install panns_inference==0.1.0
 pip install transformers==4.47.1
+pip install audidata

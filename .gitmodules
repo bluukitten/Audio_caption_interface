@@ -1,0 +1,3 @@
+[submodule "audidata"]
+	path = audidata
+	url = https://github.com/AudioFans/audidata

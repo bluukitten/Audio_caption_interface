@@ -1,6 +1,6 @@
 # Audio Caption with PyTorch
 
-This repo provides an audio caption system with PyTorch. The system is trained on the [Clotho](https://zenodo.org/records/3490684) dataset. The audio caption system consists of a pretrained audio encoder and an LLM-based caption decoder.
+This repo provides a minimal implementation of audio caption system with PyTorch. The system is trained on the [Clotho](https://zenodo.org/records/3490684) dataset. The audio caption system consists of a pretrained audio encoder and an LLM-based caption decoder.
 
 ## 0. Install dependencies
 
@@ -17,8 +17,6 @@ conda activate audio_caption
 
 # Install Python packages dependencies
 bash env.sh
-
-git submodule add https://github.com/AudioFans/audidata audidata
 ```
 
 # Download datasets
@@ -53,7 +51,7 @@ We train the audio caption on the Clotho dataset. The training takes around 20 m
 CUDA_VISIBLE_DEVICES=0 python inference.py --ckpt_path="./checkpoints/train/Cnn14_Llama/step=10000.pth"
 ```
 
-The sampled texts look like:
+The predicted caption of [young artist.wav](assets/young artists.wav) looks like:
 
 <pre>
 Audio path: /datasets/clotho/clotho_audio_evaluation/young artists.wav
@@ -69,9 +67,7 @@ Prediction: several people were having a chat in the restaurant or dishes clang 
 
 ## External links
 
-This repo is benefited from the following repos.
-
-mini_llm: https://github.com/qiuqiangkong/mini_llm
+The LLM decoder is based on mini_llm: https://github.com/qiuqiangkong/mini_llm
 
 ## License
 

@@ -37,7 +37,6 @@ dataset_root (7.3 GB)
 ## 1. Train
 
 ```python
-export PYTHONPATH=$PYTHONPATH:audidata
 CUDA_VISIBLE_DEVICES=0 python train.py
 ```
 
@@ -51,7 +50,7 @@ We train the audio caption on the Clotho dataset. The training takes around 20 m
 CUDA_VISIBLE_DEVICES=0 python inference.py --ckpt_path="./checkpoints/train/Cnn14_Llama/step=10000.pth"
 ```
 
-The predicted caption of [young artist.wav](assets/young artists.wav) looks like:
+The predicted caption of [young artist.wav](assets/young_artists.wav) looks like:
 
 <pre>
 Audio path: /datasets/clotho/clotho_audio_evaluation/young artists.wav

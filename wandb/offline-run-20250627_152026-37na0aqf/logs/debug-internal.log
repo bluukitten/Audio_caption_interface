@@ -1,0 +1,15 @@
+{"time":"2025-06-27T15:20:26.918276+08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-06-27T15:20:26.918327+08:00","level":"INFO","msg":"created symlink","path":"/Users/huiyufei/Desktop/mini_audio_caption/wandb/offline-run-20250627_152026-37na0aqf/logs/debug-core.log"}
+{"time":"2025-06-27T15:20:27.027489+08:00","level":"INFO","msg":"created new stream","id":"37na0aqf"}
+{"time":"2025-06-27T15:20:27.027537+08:00","level":"INFO","msg":"stream: started","id":"37na0aqf"}
+{"time":"2025-06-27T15:20:27.027801+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"37na0aqf"}
+{"time":"2025-06-27T15:20:27.027879+08:00","level":"INFO","msg":"handler: started","stream_id":"37na0aqf"}
+{"time":"2025-06-27T15:20:27.027881+08:00","level":"INFO","msg":"sender: started","stream_id":"37na0aqf"}
+{"time":"2025-06-27T15:20:27.030546+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-27T15:20:40.073874+08:00","level":"INFO","msg":"stream: closing","id":"37na0aqf"}
+{"time":"2025-06-27T15:20:40.074121+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-27T15:20:40.078451+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-27T15:20:40.079646+08:00","level":"INFO","msg":"handler: closed","stream_id":"37na0aqf"}
+{"time":"2025-06-27T15:20:40.079654+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"37na0aqf"}
+{"time":"2025-06-27T15:20:40.079672+08:00","level":"INFO","msg":"sender: closed","stream_id":"37na0aqf"}
+{"time":"2025-06-27T15:20:40.079876+08:00","level":"INFO","msg":"stream: closed","id":"37na0aqf"}

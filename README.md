@@ -1,6 +1,6 @@
 # Audio Caption with PyTorch
 
-This repo provides a minimal implementation of audio caption system with PyTorch. The system is trained on the [Clotho](https://zenodo.org/records/3490684) dataset. The audio caption system consists of a pretrained audio encoder and an LLM-based caption decoder.
+This repo provides a minimal implementation of audio caption system with PyTorch and a UI interfcace using PyQt6. The system is trained on the [Clotho](https://zenodo.org/records/3490684) dataset. The audio caption system consists of a pretrained audio encoder and an LLM-based caption decoder.
 
 ## 0. Install dependencies
 
@@ -19,35 +19,16 @@ conda activate audio_caption
 bash env.sh
 ```
 
-# Download datasets
-
-Download the [Clotho](https://zenodo.org/records/3490684) dataset. The downloaded datasets look like:
-
-<pre>
-dataset_root (7.3 GB)
-├── clotho_audio_development (2894 wavs)
-├── clotho_audio_evaluation (1046 wavs)
-├── clotho_captions_development.csv
-├── clotho_captions_evaluation.csv
-├── clotho_metadata_development.csv
-├── clotho_metadata_evaluation.csv
-└── LICENSE
-</pre>
-
-## 1. Train
+## 1. Change the path
 
 ```python
-CUDA_VISIBLE_DEVICES=0 python train.py
+# change to your local path (app.py)
+pixmap = QPixmap("/mini_audio_caption/图像2025-7-14 00.48.jpg")
 ```
 
-We train the audio caption on the Clotho dataset. The training takes around 20 min to train on a single RTX4090. 
-
-![Training & Validation Loss](assets/loss.png)
-
-## 2. Inference
-
 ```python
-CUDA_VISIBLE_DEVICES=0 python inference.py --ckpt_path="./checkpoints/train/Cnn14_Llama/step=10000.pth"
+# change to your local path (inference.py)
+ckpt_path = '/mini_audio_caption/checkpoints/train/Cnn14_Llama/step=20000.pth'
 ```
 
 The predicted caption of [young artist.wav](assets/young_artists.wav) looks like:

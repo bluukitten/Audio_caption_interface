@@ -1,0 +1,16 @@
+{"time":"2025-06-18T15:06:49.402613+08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-06-18T15:06:49.402657+08:00","level":"INFO","msg":"created symlink","path":"/Users/huiyufei/Desktop/mini_audio_caption/wandb/run-20250618_150649-4tmcfeoi/logs/debug-core.log"}
+{"time":"2025-06-18T15:06:49.512462+08:00","level":"INFO","msg":"created new stream","id":"4tmcfeoi"}
+{"time":"2025-06-18T15:06:49.512504+08:00","level":"INFO","msg":"stream: started","id":"4tmcfeoi"}
+{"time":"2025-06-18T15:06:49.512833+08:00","level":"INFO","msg":"handler: started","stream_id":"4tmcfeoi"}
+{"time":"2025-06-18T15:06:49.513048+08:00","level":"INFO","msg":"sender: started","stream_id":"4tmcfeoi"}
+{"time":"2025-06-18T15:06:49.513068+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"4tmcfeoi"}
+{"time":"2025-06-18T15:07:19.520831+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-18T15:07:51.797286+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-18T15:08:19.849674+08:00","level":"INFO","msg":"stream: closing","id":"4tmcfeoi"}
+{"time":"2025-06-18T15:08:19.84984+08:00","level":"INFO","msg":"handler: closed","stream_id":"4tmcfeoi"}
+{"time":"2025-06-18T15:08:19.849855+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4tmcfeoi"}
+{"time":"2025-06-18T15:08:19.850124+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 3 attempt(s): context canceled"}
+{"time":"2025-06-18T15:08:19.850335+08:00","level":"WARN","msg":"runwork: ignoring record after close","work":{"Record":{"RecordType":{"Request":{"RequestType":{"Defer":{}}}},"control":{"always_send":true}}}}
+{"time":"2025-06-18T15:08:19.850543+08:00","level":"INFO","msg":"sender: closed","stream_id":"4tmcfeoi"}
+{"time":"2025-06-18T15:08:19.850556+08:00","level":"INFO","msg":"stream: closed","id":"4tmcfeoi"}

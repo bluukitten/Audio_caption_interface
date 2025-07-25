@@ -1,0 +1,16 @@
+{"time":"2025-06-18T14:37:25.246645+08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-06-18T14:37:25.246675+08:00","level":"INFO","msg":"created symlink","path":"/Users/huiyufei/Desktop/mini_audio_caption/wandb/run-20250618_143725-dricg2z1/logs/debug-core.log"}
+{"time":"2025-06-18T14:37:26.380395+08:00","level":"INFO","msg":"created new stream","id":"dricg2z1"}
+{"time":"2025-06-18T14:37:26.380601+08:00","level":"INFO","msg":"stream: started","id":"dricg2z1"}
+{"time":"2025-06-18T14:37:26.380903+08:00","level":"INFO","msg":"handler: started","stream_id":"dricg2z1"}
+{"time":"2025-06-18T14:37:26.380963+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"dricg2z1"}
+{"time":"2025-06-18T14:37:26.381084+08:00","level":"INFO","msg":"sender: started","stream_id":"dricg2z1"}
+{"time":"2025-06-18T14:37:56.394101+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp 35.186.228.49:443: i/o timeout"}
+{"time":"2025-06-18T14:38:28.556409+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-18T14:38:55.684093+08:00","level":"INFO","msg":"stream: closing","id":"dricg2z1"}
+{"time":"2025-06-18T14:38:55.684296+08:00","level":"INFO","msg":"handler: closed","stream_id":"dricg2z1"}
+{"time":"2025-06-18T14:38:55.684319+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dricg2z1"}
+{"time":"2025-06-18T14:38:55.685081+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 3 attempt(s): context canceled"}
+{"time":"2025-06-18T14:38:55.68543+08:00","level":"WARN","msg":"runwork: ignoring record after close","work":{"Record":{"RecordType":{"Request":{"RequestType":{"Defer":{}}}},"control":{"always_send":true}}}}
+{"time":"2025-06-18T14:38:55.685859+08:00","level":"INFO","msg":"sender: closed","stream_id":"dricg2z1"}
+{"time":"2025-06-18T14:38:55.685874+08:00","level":"INFO","msg":"stream: closed","id":"dricg2z1"}

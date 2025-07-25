@@ -1,0 +1,25 @@
+2025-06-18 15:04:27,948 INFO    MainThread:58196 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_setup.py:_flush():68] Configure stats pid to 58196
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_setup.py:_flush():68] Loading settings from /Users/huiyufei/.config/wandb/settings
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_setup.py:_flush():68] Loading settings from /Users/huiyufei/Desktop/mini_audio_caption/wandb/settings
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_init.py:_log_setup():528] Logging user logs to /Users/huiyufei/Desktop/mini_audio_caption/wandb/run-20250618_150427-8vvj22oh/logs/debug.log
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/huiyufei/Desktop/mini_audio_caption/wandb/run-20250618_150427-8vvj22oh/logs/debug-internal.log
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_init.py:init():644] calling init triggers
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {}
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_init.py:init():680] starting backend
+2025-06-18 15:04:27,949 INFO    MainThread:58196 [wandb_init.py:init():684] sending inform_init request
+2025-06-18 15:04:27,994 INFO    MainThread:58196 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-06-18 15:04:27,994 INFO    MainThread:58196 [wandb_init.py:init():697] backend started and connected
+2025-06-18 15:04:28,000 INFO    MainThread:58196 [wandb_init.py:init():790] updated telemetry
+2025-06-18 15:04:28,023 INFO    MainThread:58196 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2025-06-18 15:05:58,424 ERROR   MainThread:58196 [wandb_init.py:init():849] encountered error: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+2025-06-18 15:05:58,427 ERROR   MainThread:58196 [wandb_init.py:init():1308] error in wandb.init()
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/audio_caption/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1298, in init
+    return wi.init()
+  File "/opt/anaconda3/envs/audio_caption/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 855, in init
+    raise error
+wandb.errors.errors.CommError: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+2025-06-18 15:05:58,461 WARNING MsgRouterThr:58196 [router.py:message_loop():75] message_loop has been closed

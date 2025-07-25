@@ -1,4 +1,5 @@
 import argparse
+import os
 from pathlib import Path
 
 import numpy as np
@@ -25,14 +26,15 @@ def train(args):
     # Default parameters
     sr = 32000  # To be consistent with the encoder
     batch_size = 16
-    num_workers = 16
-    pin_memory = True
+    num_workers = min(4, os.cpu_count()) 
+    pin_memory = False
     learning_rate = 1e-4
     test_every_n_steps = 200
     save_every_n_steps = 2000
     training_steps = 10000
     wandb_log = True
-    device = "cuda"
+    device ="cpu"
+    print(f"\n=== 使用设备: {device} ===\n")
     max_length = 30  # Max caption length
     clip_duration = 10.  # Audio clip duration
     audio_encoder_name = "Cnn14"
@@ -41,7 +43,7 @@ def train(args):
     filename = Path(__file__).stem
     
     # Dataset
-    root = "/datasets/clotho"
+    root = args.data_dir if hasattr(args, 'data_dir') else "/Users/huiyufei/datasets/clotho"
 
     # Checkpoints directory
     model_name = "{}_{}".format(audio_encoder_name, llm_decoder_name)
@@ -88,24 +90,24 @@ def train(args):
         dataset=train_dataset, 
         batch_size=batch_size, 
         sampler=train_sampler,
-        num_workers=num_workers, 
-        pin_memory=pin_memory
+        num_workers=4, 
+        pin_memory=False
     )
 
     eval_train_dataloader = DataLoader(
         dataset=train_dataset, 
         batch_size=batch_size, 
         sampler=eval_train_sampler,
-        num_workers=num_workers, 
-        pin_memory=pin_memory
+        num_workers=4, 
+        pin_memory=False
     )
 
     eval_test_dataloader = DataLoader(
         dataset=test_dataset, 
         batch_size=batch_size, 
         sampler=eval_test_sampler,
-        num_workers=num_workers, 
-        pin_memory=pin_memory
+        num_workers=4, 
+        pin_memory=False
     )
 
     # Pretrained audio encoder
@@ -124,8 +126,7 @@ def train(args):
     optimizer = optim.AdamW(params=llm_decoder.parameters(), lr=learning_rate)
 
     if wandb_log:
-        wandb.init(project="mini_audio_caption", name="{}".format(model_name))
-
+        wandb.init(project="mini_audio_caption",  mode="offline", settings=wandb.Settings(init_timeout=300))
     # Train
     for step, data in enumerate(tqdm(train_dataloader)):
 
@@ -331,6 +332,7 @@ def validate(
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('--data_dir', type=str, default="/Users/huiyufei/datasets/clotho",
+                      help='Path to Clotho dataset directory')
     args = parser.parse_args()
-
     train(args)

@@ -1,0 +1,47 @@
+{
+  "os": "macOS-15.5-arm64-arm-64bit",
+  "python": "CPython 3.10.18",
+  "startedAt": "2025-06-18T08:05:37.174490Z",
+  "args": [
+    "--data_dir",
+    "/Users/huiyufei/datasets/clotho"
+  ],
+  "program": "/Users/huiyufei/Desktop/mini_audio_caption/train.py",
+  "codePath": "train.py",
+  "git": {
+    "remote": "https://github.com/qiuqiangkong/mini_audio_caption.git",
+    "commit": "69526d79f9c57fc07721bf5060e4da600efd6a01"
+  },
+  "root": "/Users/huiyufei/Desktop/mini_audio_caption",
+  "host": "huiyufeideMacBook-Pro.local",
+  "executable": "/opt/anaconda3/envs/audio_caption/bin/python",
+  "codePathLocal": "train.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "173946015744"
+    },
+    "/System/Volumes/Data": {
+      "total": "245107195904",
+      "used": "173946015744"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Apple M2",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 10,
+    "memoryGb": 8,
+    "swapTotalBytes": "3221225472",
+    "ramTotalBytes": "8589934592"
+  }
+}

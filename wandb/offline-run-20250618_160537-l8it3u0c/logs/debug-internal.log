@@ -1,0 +1,15 @@
+{"time":"2025-06-18T16:05:37.200513+08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-06-18T16:05:37.200552+08:00","level":"INFO","msg":"created symlink","path":"/Users/huiyufei/Desktop/mini_audio_caption/wandb/offline-run-20250618_160537-l8it3u0c/logs/debug-core.log"}
+{"time":"2025-06-18T16:05:37.311098+08:00","level":"INFO","msg":"created new stream","id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:37.311142+08:00","level":"INFO","msg":"stream: started","id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:37.311513+08:00","level":"INFO","msg":"handler: started","stream_id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:37.311776+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:37.311778+08:00","level":"INFO","msg":"sender: started","stream_id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:37.315428+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-18T16:05:49.693248+08:00","level":"INFO","msg":"stream: closing","id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:49.693998+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-18T16:05:49.696086+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-18T16:05:49.6978+08:00","level":"INFO","msg":"handler: closed","stream_id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:49.69782+08:00","level":"INFO","msg":"sender: closed","stream_id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:49.69781+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"l8it3u0c"}
+{"time":"2025-06-18T16:05:49.69873+08:00","level":"INFO","msg":"stream: closed","id":"l8it3u0c"}

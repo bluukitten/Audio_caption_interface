@@ -6,7 +6,7 @@ This repo provides a minimal implementation of audio caption system with PyTorch
 
 ```bash
 # Clone the repo
-git clone https://github.com/qiuqiangkong/mini_audio_caption
+git clone https://github.com/bluukitten/Audio_caption_interface/
 cd audio_caption
 
 # Install Python environment
@@ -41,14 +41,9 @@ Ground truth: Men and women are gathered together talking and laughing.
 Ground truth: men and women are engaging in chatter and laughter.
 Ground truth: people talking and laughing with a loud person near the end
 Prediction: a large group of women is talking in an enclosed space space movement air commuters water barrel room amid the breaks another one child
-Prediction: a large group of people are all talking at the same time join in the background take off with each other sirens
-Prediction: several people were having a chat in the restaurant or dishes clang speech close by field is being pushedting
 </pre>
 
 ## External links
 
 The LLM decoder is based on mini_llm: https://github.com/qiuqiangkong/mini_llm
-
-## License
-
-MIT
+The train and reference codes are based on https://github.com/qiuqiangkong/mini_audio_caption
